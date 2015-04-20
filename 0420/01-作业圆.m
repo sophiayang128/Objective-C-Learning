@@ -103,6 +103,13 @@
 - (void)setPoint:(Point2D *)point;
 - (Point2D *)point;
 
+// 判断跟其它圆是否重叠
+- (BOOL)isInteractWithOther:(Circle *)other;
+// 判断两个类是否重叠
++ (BOOL)isInteractBetweenCircle1:(Circle *)c1 andCircle2:(Circle *)c2;
+
+
+
 @end
 
 @implementation Circle
@@ -127,6 +134,28 @@
     return _point;
 }
 
+// 判断跟其它圆是否重叠
+- (BOOL)isInteractWithOther:(Circle *)other
+{
+    // return [Circle isInteractBetweenCircle1:self andCircle2:other];
+    // 如果两个圆心距离小于半径和-->重叠
+    Point2D *p1 = [self point];
+    Point2D *p2 = [other point];
+    
+    // 圆心之间的距离
+    double distance = [p1 distanceWithOther:p2];
+    
+    // 半径和
+    double radiusSum = [self radius] + [other radius];
+    
+    return distance < radiusSum; // 关系运算符结果：1 or 0
+    
+}
+// 判断两个类是否重叠
++ (BOOL)isInteractBetweenCircle1:(Circle *)c1 andCircle2:(Circle *)c2
+{
+    return [c1 isInteractWithOther:c2];
+}
 
 
 @end
@@ -140,9 +169,30 @@ int main()
     Circle *c1 = [Circle new];
     //创建圆心对象
     Point2D *p1 = [Point2D new];
-    [p1 setX:10 andY:15];
+    [p1 setX:10 andY:10];
     //先设置圆心
     [c1 setPoint:p1];
+    [c1 setRadius:10];
+    
+    Circle *c2 = [Circle new];
+    Point2D *p2 = [Point2D new];
+    [p2 setX:30 andY:10];
+    [c2 setPoint:p2];
+    [c2 setRadius:10];
+    
+    BOOL judge = [c1 isInteractWithOther:c2];
+    if (judge==1)
+    {
+        NSLog(@"两个圆是重叠的");
+    }
+    else
+    {
+        NSLog(@"两个圆是不重叠的");
+    }
+    
+    
+    //[[c1 point] setX:15];   // x变为15
+    
     
     
     return 0;
