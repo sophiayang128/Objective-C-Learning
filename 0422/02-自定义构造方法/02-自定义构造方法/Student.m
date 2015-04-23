@@ -21,6 +21,15 @@
 
 - (id)initWithName:(NSString *)name andAge:(int)age andNo:(int)no
 {
+    if (self = [super initWithName:name andAge:age]) //Person里声明的name和age，父类的东西去父类初始化
+    {
+        _no = no;
+    }
+    return self;
+}
+
+/*- (id)initWithName:(NSString *)name andAge:(int)age andNo:(int)no
+{
     if (self = [super init])
     {
         _no = no;
@@ -30,6 +39,6 @@
         
     }
     return self;
-}
+}*/
 
 @end
