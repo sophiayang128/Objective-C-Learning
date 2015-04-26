@@ -12,5 +12,7 @@
 
 + (int)numberCountOfString:(NSString *)str;
 
+- (int)numberCount;
+
 
 @end

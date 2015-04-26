@@ -13,13 +13,29 @@
 + (int)numberCountOfString:(NSString *)str
 {
     int number = 0;
-    for (int i=0; i<str.length; i++) {
+    for (int i=0; i<str.length; i++)
+    {
         
         char a = [str characterAtIndex:i];  //NSUInteger: unsigned long
-        if (a>47 && a<59) {
+        if (a>47 && a<59)
+        {
             number++;
         }
     
+    }
+    return number;
+}
+
+- (int)numberCount
+{
+    int number=0;
+    for (int i=0; i<self.length; i++)
+    {
+        unichar a = [self characterAtIndex:i];
+        if (a>47 && a<59)
+        {
+            number++;
+        }
     }
     return number;
 }

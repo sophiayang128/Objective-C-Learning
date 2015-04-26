@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9A26DF81AEC752A0001BD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A26DF71AEC752A0001BD25 /* main.m */; };
+		B9A26E001AEC780D0001BD25 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A26DFF1AEC780D0001BD25 /* Person.m */; };
+		B9AEF42F1AED24040001EA15 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AEF42E1AED24040001EA15 /* Student.m */; };
+		B9AEF4321AED2B960001EA15 /* GoodStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AEF4311AED2B960001EA15 /* GoodStudent.m */; };
+		B9AEF4351AED2D930001EA15 /* Person+Sophi.m in Sources */ = {isa = PBXBuildFile; fileRef = B9AEF4341AED2D930001EA15 /* Person+Sophi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9A26DF21AEC752A0001BD25 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B9A26DF41AEC752A0001BD25 /* 01-类的本质 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "01-类的本质"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9A26DF71AEC752A0001BD25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9A26DFE1AEC780D0001BD25 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		B9A26DFF1AEC780D0001BD25 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		B9AEF42D1AED24040001EA15 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B9AEF42E1AED24040001EA15 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B9AEF4301AED2B960001EA15 /* GoodStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodStudent.h; sourceTree = "<group>"; };
+		B9AEF4311AED2B960001EA15 /* GoodStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodStudent.m; sourceTree = "<group>"; };
+		B9AEF4331AED2D930001EA15 /* Person+Sophi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+Sophi.h"; sourceTree = "<group>"; };
+		B9AEF4341AED2D930001EA15 /* Person+Sophi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+Sophi.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9A26DF11AEC752A0001BD25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9A26DEB1AEC752A0001BD25 = {
+			isa = PBXGroup;
+			children = (
+				B9A26DF61AEC752A0001BD25 /* 01-类的本质 */,
+				B9A26DF51AEC752A0001BD25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9A26DF51AEC752A0001BD25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9A26DF41AEC752A0001BD25 /* 01-类的本质 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9A26DF61AEC752A0001BD25 /* 01-类的本质 */ = {
+			isa = PBXGroup;
+			children = (
+				B9A26DF71AEC752A0001BD25 /* main.m */,
+				B9A26DFE1AEC780D0001BD25 /* Person.h */,
+				B9A26DFF1AEC780D0001BD25 /* Person.m */,
+				B9AEF42D1AED24040001EA15 /* Student.h */,
+				B9AEF42E1AED24040001EA15 /* Student.m */,
+				B9AEF4301AED2B960001EA15 /* GoodStudent.h */,
+				B9AEF4311AED2B960001EA15 /* GoodStudent.m */,
+				B9AEF4331AED2D930001EA15 /* Person+Sophi.h */,
+				B9AEF4341AED2D930001EA15 /* Person+Sophi.m */,
+			);
+			path = "01-类的本质";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9A26DF31AEC752A0001BD25 /* 01-类的本质 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9A26DFB1AEC752A0001BD25 /* Build configuration list for PBXNativeTarget "01-类的本质" */;
+			buildPhases = (
+				B9A26DF01AEC752A0001BD25 /* Sources */,
+				B9A26DF11AEC752A0001BD25 /* Frameworks */,
+				B9A26DF21AEC752A0001BD25 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "01-类的本质";
+			productName = "01-类的本质";
+			productReference = B9A26DF41AEC752A0001BD25 /* 01-类的本质 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9A26DEC1AEC752A0001BD25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Sophia Tang";
+				TargetAttributes = {
+					B9A26DF31AEC752A0001BD25 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = B9A26DEF1AEC752A0001BD25 /* Build configuration list for PBXProject "01-类的本质" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9A26DEB1AEC752A0001BD25;
+			productRefGroup = B9A26DF51AEC752A0001BD25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9A26DF31AEC752A0001BD25 /* 01-类的本质 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9A26DF01AEC752A0001BD25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AEF4321AED2B960001EA15 /* GoodStudent.m in Sources */,
+				B9A26E001AEC780D0001BD25 /* Person.m in Sources */,
+				B9A26DF81AEC752A0001BD25 /* main.m in Sources */,
+				B9AEF4351AED2D930001EA15 /* Person+Sophi.m in Sources */,
+				B9AEF42F1AED24040001EA15 /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B9A26DF91AEC752A0001BD25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B9A26DFA1AEC752A0001BD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B9A26DFC1AEC752A0001BD25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9A26DFD1AEC752A0001BD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9A26DEF1AEC752A0001BD25 /* Build configuration list for PBXProject "01-类的本质" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A26DF91AEC752A0001BD25 /* Debug */,
+				B9A26DFA1AEC752A0001BD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9A26DFB1AEC752A0001BD25 /* Build configuration list for PBXNativeTarget "01-类的本质" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9A26DFC1AEC752A0001BD25 /* Debug */,
+				B9A26DFD1AEC752A0001BD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9A26DEC1AEC752A0001BD25 /* Project object */;
+}

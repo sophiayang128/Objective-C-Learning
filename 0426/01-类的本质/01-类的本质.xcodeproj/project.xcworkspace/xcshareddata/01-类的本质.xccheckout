@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>153A6F9F-52C0-4920-ABAC-AC582850B376</string>
+	<string>C4E4E9DD-D746-4698-BABD-5F299A453BAA</string>
 	<key>IDESourceControlProjectName</key>
-	<string>02-分类应用</string>
+	<string>01-类的本质</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>
 		<string>https://github.com/sophiayang128/Objective-C-Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>0425/02-分类应用/02-分类应用.xcodeproj</string>
+	<string>0426/01-类的本质/01-类的本质.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>
