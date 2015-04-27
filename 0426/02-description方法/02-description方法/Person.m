@@ -10,10 +10,18 @@
 
 @implementation Person
 
+//决定了实例对象的输出结果
 -(NSString *)description
 {
     return [NSString stringWithFormat:@"age=%d,name=%@",_age,_name];
     
+}
+
+
+//决定了类对象的输出结果
++ (NSString *)description
+{
+    return @"modified +description";
 }
 
 @end
