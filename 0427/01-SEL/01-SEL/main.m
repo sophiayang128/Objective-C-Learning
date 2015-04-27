@@ -9,6 +9,7 @@
 /*
  SEL其实是对方法的一种包装，将方法包装成SEL类型的数据，去找对应方法的地址
  找到方法地址就可以调用方法
+ 其实消息就是SEL
  */
 
 #import <Foundation/Foundation.h>
