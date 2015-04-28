@@ -12,6 +12,10 @@
  1> 在.h文件中用@class来声明类
  2> 在.m文件中用#import来包含类的所有东西
  
+ 3. 两端循环引用的解决方案
+ 1> 一端用retain
+ 2> 一端用assgin
+ 
  */
 
 /*
@@ -23,9 +27,21 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "Card.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Person *p = [[Person alloc] init];
+        
+        Card *c = [[Card alloc] init];
+        
+        p.card = c;
+        c.person = p;
+        
+        [c release];
+        
+        [p release];
         
     }
     return 0;

@@ -12,6 +12,6 @@
 
 @interface Card : NSObject
 
-@property (nonatomic, retain) Person *person;
+@property (nonatomic, assign) Person *person;
 
 @end

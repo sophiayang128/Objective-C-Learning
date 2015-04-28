@@ -12,7 +12,8 @@
 @implementation Card
 - (void)dealloc
 {
-    [_person release];
+    NSLog(@"Card被回收了");
+    //[_person release]; 用了assgin这里就不用release
     [super dealloc];
 }
 

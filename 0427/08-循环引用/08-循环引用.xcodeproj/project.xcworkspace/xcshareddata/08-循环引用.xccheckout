@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E5944A56-AF6B-4C80-82B9-8D40D2CC1EAD</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>08-循环引用</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>
 		<string>https://github.com/sophiayang128/Objective-C-Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>0427/08-循环引用/08-循环引用.xcodeproj/project.xcworkspace</string>
+	<string>0427/08-循环引用/08-循环引用.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>

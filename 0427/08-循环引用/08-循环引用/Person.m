@@ -13,6 +13,7 @@
 
 - (void)dealloc
 {
+    NSLog(@"Person被回收了");
     [_card release];
     [super release];
 }
