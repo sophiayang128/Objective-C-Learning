@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "Player.h"
 #import "PlayersViewControllerTableViewController.h"
+#import "TestTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+//    UINavigationController *navigationController = [tabBarController viewControllers][0];
+//    PlayersViewControllerTableViewController *playersViewController = [navigationController viewControllers][0];
+    
+    
     
     PlayersViewControllerTableViewController *multiPlayers = [[PlayersViewControllerTableViewController alloc] init];
     
@@ -47,6 +53,8 @@
     PlayersViewControllerTableViewController *playersViewController = [navigationController viewControllers][0];
     playersViewController.players = multiPlayers.players;
     
+    
+//    self.window.rootViewController=[[TestTableViewController alloc] init];
     
     
     

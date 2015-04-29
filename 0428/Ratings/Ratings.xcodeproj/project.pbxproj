@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B941F52C1AF0ABE70046B949 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F52B1AF0ABE70046B949 /* crown.png */; };
+		B941F52E1AF0AE5B0046B949 /* whole_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F52D1AF0AE5B0046B949 /* whole_hand.png */; };
+		B941F5341AF0B5FF0046B949 /* 5StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F52F1AF0B5FF0046B949 /* 5StarsSmall.png */; };
+		B941F5351AF0B5FF0046B949 /* 4StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F5301AF0B5FF0046B949 /* 4StarsSmall.png */; };
+		B941F5361AF0B5FF0046B949 /* 3StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F5311AF0B5FF0046B949 /* 3StarsSmall.png */; };
+		B941F5371AF0B5FF0046B949 /* 2StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F5321AF0B5FF0046B949 /* 2StarsSmall.png */; };
+		B941F5381AF0B5FF0046B949 /* 1StarsSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = B941F5331AF0B5FF0046B949 /* 1StarsSmall.png */; };
+		B941F5411AF0BD910046B949 /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B941F5401AF0BD910046B949 /* PlayerCell.m */; };
+		B941F5441AF0C1810046B949 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B941F5431AF0C1810046B949 /* PlayerDetailsViewController.m */; };
+		B941F5471AF0E84A0046B949 /* GamePickViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B941F5461AF0E84A0046B949 /* GamePickViewController.m */; };
+		B941F57C1AF0FE000046B949 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B941F57B1AF0FE000046B949 /* TestTableViewController.m */; };
 		B98162571AEFDE8F000C07FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162561AEFDE8F000C07FD /* main.m */; };
 		B981625A1AEFDE8F000C07FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162591AEFDE8F000C07FD /* AppDelegate.m */; };
 		B981625D1AEFDE8F000C07FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B981625C1AEFDE8F000C07FD /* ViewController.m */; };
@@ -29,6 +40,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B941F52B1AF0ABE70046B949 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		B941F52D1AF0AE5B0046B949 /* whole_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whole_hand.png; sourceTree = "<group>"; };
+		B941F52F1AF0B5FF0046B949 /* 5StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5StarsSmall.png; sourceTree = "<group>"; };
+		B941F5301AF0B5FF0046B949 /* 4StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4StarsSmall.png; sourceTree = "<group>"; };
+		B941F5311AF0B5FF0046B949 /* 3StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3StarsSmall.png; sourceTree = "<group>"; };
+		B941F5321AF0B5FF0046B949 /* 2StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2StarsSmall.png; sourceTree = "<group>"; };
+		B941F5331AF0B5FF0046B949 /* 1StarsSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1StarsSmall.png; sourceTree = "<group>"; };
+		B941F53F1AF0BD910046B949 /* PlayerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCell.h; sourceTree = "<group>"; };
+		B941F5401AF0BD910046B949 /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
+		B941F5421AF0C1810046B949 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		B941F5431AF0C1810046B949 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		B941F5451AF0E84A0046B949 /* GamePickViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickViewController.h; sourceTree = "<group>"; };
+		B941F5461AF0E84A0046B949 /* GamePickViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickViewController.m; sourceTree = "<group>"; };
+		B941F57A1AF0FE000046B949 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		B941F57B1AF0FE000046B949 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		B98162511AEFDE8F000C07FD /* Ratings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98162551AEFDE8F000C07FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B98162561AEFDE8F000C07FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +95,8 @@
 		B98162481AEFDE8F000C07FD = {
 			isa = PBXGroup;
 			children = (
+				B941F57A1AF0FE000046B949 /* TestTableViewController.h */,
+				B941F57B1AF0FE000046B949 /* TestTableViewController.m */,
 				B98162531AEFDE8F000C07FD /* Ratings */,
 				B981626D1AEFDE8F000C07FD /* RatingsTests */,
 				B98162521AEFDE8F000C07FD /* Products */,
@@ -87,6 +115,13 @@
 		B98162531AEFDE8F000C07FD /* Ratings */ = {
 			isa = PBXGroup;
 			children = (
+				B941F52F1AF0B5FF0046B949 /* 5StarsSmall.png */,
+				B941F5301AF0B5FF0046B949 /* 4StarsSmall.png */,
+				B941F5311AF0B5FF0046B949 /* 3StarsSmall.png */,
+				B941F5321AF0B5FF0046B949 /* 2StarsSmall.png */,
+				B941F5331AF0B5FF0046B949 /* 1StarsSmall.png */,
+				B941F52D1AF0AE5B0046B949 /* whole_hand.png */,
+				B941F52B1AF0ABE70046B949 /* crown.png */,
 				B98162581AEFDE8F000C07FD /* AppDelegate.h */,
 				B98162591AEFDE8F000C07FD /* AppDelegate.m */,
 				B981625B1AEFDE8F000C07FD /* ViewController.h */,
@@ -99,6 +134,12 @@
 				B981627B1AEFE77E000C07FD /* PlayersViewControllerTableViewController.m */,
 				B981627D1AEFE922000C07FD /* Player.h */,
 				B981627E1AEFE922000C07FD /* Player.m */,
+				B941F53F1AF0BD910046B949 /* PlayerCell.h */,
+				B941F5401AF0BD910046B949 /* PlayerCell.m */,
+				B941F5421AF0C1810046B949 /* PlayerDetailsViewController.h */,
+				B941F5431AF0C1810046B949 /* PlayerDetailsViewController.m */,
+				B941F5451AF0E84A0046B949 /* GamePickViewController.h */,
+				B941F5461AF0E84A0046B949 /* GamePickViewController.m */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -209,9 +250,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B941F5351AF0B5FF0046B949 /* 4StarsSmall.png in Resources */,
 				B98162601AEFDE8F000C07FD /* Main.storyboard in Resources */,
+				B941F5371AF0B5FF0046B949 /* 2StarsSmall.png in Resources */,
+				B941F52E1AF0AE5B0046B949 /* whole_hand.png in Resources */,
+				B941F5361AF0B5FF0046B949 /* 3StarsSmall.png in Resources */,
+				B941F5381AF0B5FF0046B949 /* 1StarsSmall.png in Resources */,
+				B941F52C1AF0ABE70046B949 /* crown.png in Resources */,
 				B98162651AEFDE8F000C07FD /* LaunchScreen.xib in Resources */,
 				B98162621AEFDE8F000C07FD /* Images.xcassets in Resources */,
+				B941F5341AF0B5FF0046B949 /* 5StarsSmall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,8 +280,12 @@
 				B981625D1AEFDE8F000C07FD /* ViewController.m in Sources */,
 				B981625A1AEFDE8F000C07FD /* AppDelegate.m in Sources */,
 				B98162571AEFDE8F000C07FD /* main.m in Sources */,
+				B941F5471AF0E84A0046B949 /* GamePickViewController.m in Sources */,
 				B981627C1AEFE77E000C07FD /* PlayersViewControllerTableViewController.m in Sources */,
+				B941F5411AF0BD910046B949 /* PlayerCell.m in Sources */,
+				B941F57C1AF0FE000046B949 /* TestTableViewController.m in Sources */,
 				B981627F1AEFE922000C07FD /* Player.m in Sources */,
+				B941F5441AF0C1810046B949 /* PlayerDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +480,7 @@
 				B98162761AEFDE8F000C07FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B98162771AEFDE8F000C07FD /* Build configuration list for PBXNativeTarget "RatingsTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +489,7 @@
 				B98162791AEFDE8F000C07FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

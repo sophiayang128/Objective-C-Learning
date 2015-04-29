@@ -1,25 +1,22 @@
 //
-//  PlayersViewControllerTableViewController.m
+//  PlayerDetailsViewController.m
 //  Ratings
 //
 //  Created by Sophia Tang on 15/4/29.
 //  Copyright (c) 2015年 Sophia Tang. All rights reserved.
 //
 
-#import "PlayersViewControllerTableViewController.h"
+#import "PlayerDetailsViewController.h"
 #import "Player.h"
-#import "PlayerCell.h"
-#import "TestTableViewController.h"
 
-@interface PlayersViewControllerTableViewController ()
+@interface PlayerDetailsViewController ()
 
 @end
 
-@implementation PlayersViewControllerTableViewController
+@implementation PlayerDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -38,76 +35,63 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 2;
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.players count];
+    return 1;
 }
 
+- (IBAction)cancel:(id)sender
+{
+    [self.delegate PlayerDetailsViewControllerDidCancel:self];
+}
 
+- (IBAction)done:(id)sender
+{
+    Player *player = [[Player alloc] init];
+    player.name = self.nameTextField.text;
+    player.game = @"Chess";
+    player.rating = 1;
+    [self.delegate PlayerDetailsViewController:self didAddPlayer:player];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 0)
+    {
+        [self.nameTextField becomeFirstResponder];
+    }
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder]))
+    {
+        NSLog(@"init PlayerDetailsViewController");
+    }
+          return self;
+}
+          
+- (void)dealloc
+{
+    NSLog(@"dealloc PlayerDetailsViewController");
+        
+}
+              
+        
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    PlayerCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PlayerCell"];
-    Player *player = (self.players)[indexPath.row];
-    
-    cell.nameLabel.text = player.name;
-    cell.gameLabel.text = player.game;
-    cell.ratingImageView.image = [self imageForRating:player.rating];
-    
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
     return cell;
 }
+*/
 
-- (UIImage *)imageForRating:(int)rating
-{
-    switch (rating) {
-        case 1: return [UIImage imageNamed:@"1StarsSmall.png"];
-        case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
-        case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
-        case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
-        case 5: return [UIImage imageNamed:@"5StarsSmall.png"];
-
-    }
-    return nil;
-}
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    NSLog(@"你选择了%ld section,%ld row",indexPath.section,indexPath.row);
-    
-//    [self.navigationController pushViewController:[[TestTableViewController alloc] init] animated:YES];
-    
-}
-
-- (void)PlayerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)PlayerDetailsViewController:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player
-{
-    [self.players addObject:player];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:([self.players count] - 1) inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"AddPlayer"])
-    {
-        UINavigationController *navigationController = segue.destinationViewController;
-        PlayerDetailsViewController *playerDetailsViewController = [navigationController viewControllers][0];
-        playerDetailsViewController.delegate = self;
-    }
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
