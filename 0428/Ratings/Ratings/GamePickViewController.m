@@ -15,6 +15,7 @@
 @implementation GamePickViewController
 {
     NSArray *_games;
+    NSInteger _seletedIndex;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +27,8 @@
                @"Spin the Bottle",
                @"Texas Hold'em Poker",
                @"Tic-Tac-Toe"];
+    
+    _seletedIndex = [_games indexOfObject:self.game];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -42,13 +45,13 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [_games count];
 }
@@ -59,9 +62,35 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"GameCell"];
     cell.textLabel.text = _games[indexPath.row];
     
+    if (indexPath.row == _seletedIndex) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }else{
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
     // Configure the cell...
     
     return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (_seletedIndex != NSNotFound) {
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:_seletedIndex inSection:0]];
+        
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
+    _seletedIndex = indexPath.row;
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    NSString *game = _games[indexPath.row];
+    [self.delegate gamePickviewController:self didSelectGame:game];
 }
 
 

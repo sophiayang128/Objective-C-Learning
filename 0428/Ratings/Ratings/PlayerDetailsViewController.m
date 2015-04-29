@@ -14,10 +14,13 @@
 @end
 
 @implementation PlayerDetailsViewController
+{
+    NSString *_game;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.detailLabel.text = _game;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,20 +35,22 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 2;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+////#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 2;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+////#warning Incomplete method implementation.
+//    // Return the number of rows in the section.
+//    return 1;
+//}
 
 - (IBAction)cancel:(id)sender
 {
+   
+    
     [self.delegate PlayerDetailsViewControllerDidCancel:self];
 }
 
@@ -53,8 +58,9 @@
 {
     Player *player = [[Player alloc] init];
     player.name = self.nameTextField.text;
-    player.game = @"Chess";
+    player.game = _game;
     player.rating = 1;
+  
     [self.delegate PlayerDetailsViewController:self didAddPlayer:player];
 }
 
@@ -62,6 +68,7 @@
 {
     if (indexPath.section == 0)
     {
+        NSLog(@"按下了对话框");
         [self.nameTextField becomeFirstResponder];
     }
 }
@@ -71,6 +78,7 @@
     if ((self = [super initWithCoder:aDecoder]))
     {
         NSLog(@"init PlayerDetailsViewController");
+        _game = @"Chess";
     }
           return self;
 }
@@ -79,6 +87,23 @@
 {
     NSLog(@"dealloc PlayerDetailsViewController");
         
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"PickGame"]) {
+        GamePickViewController *gamePickerViewController = segue.destinationViewController;
+        gamePickerViewController.delegate = self;
+        gamePickerViewController.game = _game;
+    }
+}
+
+- (void)gamePickviewController:(GamePickViewController *)controller didSelectGame:(NSString *)game
+{
+    _game = game;
+    self.detailLabel.text = _game;
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
               
         

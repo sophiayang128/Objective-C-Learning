@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GamePickViewController;
+
+@protocol GamePickViewControllerDelegate <NSObject>
+- (void)gamePickviewController:(GamePickViewController *)controller didSelectGame:(NSString *)game;
+@end
+
 
 @interface GamePickViewController : UITableViewController
+
+@property (nonatomic,weak) id <GamePickViewControllerDelegate> delegate;
+@property (nonatomic,strong) NSString *game;
 
 @end

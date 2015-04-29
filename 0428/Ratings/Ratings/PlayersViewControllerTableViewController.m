@@ -10,6 +10,7 @@
 #import "Player.h"
 #import "PlayerCell.h"
 #import "TestTableViewController.h"
+#import "PlayerDetailsViewController.h"
 
 @interface PlayersViewControllerTableViewController ()
 
@@ -80,9 +81,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    NSLog(@"你选择了%ld section,%ld row",indexPath.section,indexPath.row);
+    //NSLog(@"你选择了%ld section,%ld row",indexPath.section,indexPath.row);
     
 //    [self.navigationController pushViewController:[[TestTableViewController alloc] init] animated:YES];
+    
     
 }
 
