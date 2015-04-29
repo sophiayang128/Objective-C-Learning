@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B981620D1AEFBB9A000C07FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B981620C1AEFBB9A000C07FD /* main.m */; };
+		B98162101AEFBB9A000C07FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B981620F1AEFBB9A000C07FD /* AppDelegate.m */; };
+		B98162131AEFBB9A000C07FD /* SmartRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162121AEFBB9A000C07FD /* SmartRootViewController.m */; };
+		B98162181AEFBB9A000C07FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B98162171AEFBB9A000C07FD /* Images.xcassets */; };
+		B98162271AEFBB9A000C07FD /* SmartBookCaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162261AEFBB9A000C07FD /* SmartBookCaseTests.m */; };
+		B98162321AEFBFD4000C07FD /* SmartReadBooks.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162311AEFBFD4000C07FD /* SmartReadBooks.m */; };
+		B98162351AEFC019000C07FD /* SmartBookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B98162341AEFC019000C07FD /* SmartBookCell.m */; };
+		B98162401AEFD28A000C07FD /* BookShelfCell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B981623E1AEFD28A000C07FD /* BookShelfCell@2x.png */; };
+		B98162411AEFD28A000C07FD /* BookShelfCell.png in Resources */ = {isa = PBXBuildFile; fileRef = B981623F1AEFD28A000C07FD /* BookShelfCell.png */; };
+		B98162471AEFDCDF000C07FD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B98162461AEFDCDF000C07FD /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98162211AEFBB9A000C07FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B98161FF1AEFBB9A000C07FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B98162061AEFBB9A000C07FD;
+			remoteInfo = SmartBookCase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B98162071AEFBB9A000C07FD /* SmartBookCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBookCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B981620B1AEFBB9A000C07FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B981620C1AEFBB9A000C07FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B981620E1AEFBB9A000C07FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B981620F1AEFBB9A000C07FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B98162111AEFBB9A000C07FD /* SmartRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SmartRootViewController.h; sourceTree = "<group>"; };
+		B98162121AEFBB9A000C07FD /* SmartRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartRootViewController.m; sourceTree = "<group>"; };
+		B98162171AEFBB9A000C07FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B98162201AEFBB9A000C07FD /* SmartBookCaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBookCaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98162251AEFBB9A000C07FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98162261AEFBB9A000C07FD /* SmartBookCaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartBookCaseTests.m; sourceTree = "<group>"; };
+		B98162301AEFBFD4000C07FD /* SmartReadBooks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartReadBooks.h; sourceTree = "<group>"; };
+		B98162311AEFBFD4000C07FD /* SmartReadBooks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartReadBooks.m; sourceTree = "<group>"; };
+		B98162331AEFC019000C07FD /* SmartBookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmartBookCell.h; sourceTree = "<group>"; };
+		B98162341AEFC019000C07FD /* SmartBookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmartBookCell.m; sourceTree = "<group>"; };
+		B981623E1AEFD28A000C07FD /* BookShelfCell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookShelfCell@2x.png"; sourceTree = SOURCE_ROOT; };
+		B981623F1AEFD28A000C07FD /* BookShelfCell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BookShelfCell.png; sourceTree = SOURCE_ROOT; };
+		B98162461AEFDCDF000C07FD /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B98162041AEFBB9A000C07FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B981621D1AEFBB9A000C07FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B98161FE1AEFBB9A000C07FD = {
+			isa = PBXGroup;
+			children = (
+				B98162091AEFBB9A000C07FD /* SmartBookCase */,
+				B98162231AEFBB9A000C07FD /* SmartBookCaseTests */,
+				B98162081AEFBB9A000C07FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B98162081AEFBB9A000C07FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B98162071AEFBB9A000C07FD /* SmartBookCase.app */,
+				B98162201AEFBB9A000C07FD /* SmartBookCaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B98162091AEFBB9A000C07FD /* SmartBookCase */ = {
+			isa = PBXGroup;
+			children = (
+				B981623E1AEFD28A000C07FD /* BookShelfCell@2x.png */,
+				B981623F1AEFD28A000C07FD /* BookShelfCell.png */,
+				B981620E1AEFBB9A000C07FD /* AppDelegate.h */,
+				B981620F1AEFBB9A000C07FD /* AppDelegate.m */,
+				B98162111AEFBB9A000C07FD /* SmartRootViewController.h */,
+				B98162121AEFBB9A000C07FD /* SmartRootViewController.m */,
+				B98162171AEFBB9A000C07FD /* Images.xcassets */,
+				B98162301AEFBFD4000C07FD /* SmartReadBooks.h */,
+				B98162311AEFBFD4000C07FD /* SmartReadBooks.m */,
+				B98162331AEFC019000C07FD /* SmartBookCell.h */,
+				B98162341AEFC019000C07FD /* SmartBookCell.m */,
+				B981620A1AEFBB9A000C07FD /* Supporting Files */,
+				B98162461AEFDCDF000C07FD /* ViewController.xib */,
+			);
+			path = SmartBookCase;
+			sourceTree = "<group>";
+		};
+		B981620A1AEFBB9A000C07FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B981620B1AEFBB9A000C07FD /* Info.plist */,
+				B981620C1AEFBB9A000C07FD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B98162231AEFBB9A000C07FD /* SmartBookCaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				B98162261AEFBB9A000C07FD /* SmartBookCaseTests.m */,
+				B98162241AEFBB9A000C07FD /* Supporting Files */,
+			);
+			path = SmartBookCaseTests;
+			sourceTree = "<group>";
+		};
+		B98162241AEFBB9A000C07FD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B98162251AEFBB9A000C07FD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B98162061AEFBB9A000C07FD /* SmartBookCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B981622A1AEFBB9A000C07FD /* Build configuration list for PBXNativeTarget "SmartBookCase" */;
+			buildPhases = (
+				B98162031AEFBB9A000C07FD /* Sources */,
+				B98162041AEFBB9A000C07FD /* Frameworks */,
+				B98162051AEFBB9A000C07FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBookCase;
+			productName = SmartBookCase;
+			productReference = B98162071AEFBB9A000C07FD /* SmartBookCase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B981621F1AEFBB9A000C07FD /* SmartBookCaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B981622D1AEFBB9A000C07FD /* Build configuration list for PBXNativeTarget "SmartBookCaseTests" */;
+			buildPhases = (
+				B981621C1AEFBB9A000C07FD /* Sources */,
+				B981621D1AEFBB9A000C07FD /* Frameworks */,
+				B981621E1AEFBB9A000C07FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B98162221AEFBB9A000C07FD /* PBXTargetDependency */,
+			);
+			name = SmartBookCaseTests;
+			productName = SmartBookCaseTests;
+			productReference = B98162201AEFBB9A000C07FD /* SmartBookCaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B98161FF1AEFBB9A000C07FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Sophia Tang";
+				TargetAttributes = {
+					B98162061AEFBB9A000C07FD = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B981621F1AEFBB9A000C07FD = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B98162061AEFBB9A000C07FD;
+					};
+				};
+			};
+			buildConfigurationList = B98162021AEFBB9A000C07FD /* Build configuration list for PBXProject "SmartBookCase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B98161FE1AEFBB9A000C07FD;
+			productRefGroup = B98162081AEFBB9A000C07FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B98162061AEFBB9A000C07FD /* SmartBookCase */,
+				B981621F1AEFBB9A000C07FD /* SmartBookCaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B98162051AEFBB9A000C07FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98162401AEFD28A000C07FD /* BookShelfCell@2x.png in Resources */,
+				B98162181AEFBB9A000C07FD /* Images.xcassets in Resources */,
+				B98162471AEFDCDF000C07FD /* ViewController.xib in Resources */,
+				B98162411AEFD28A000C07FD /* BookShelfCell.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B981621E1AEFBB9A000C07FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B98162031AEFBB9A000C07FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98162321AEFBFD4000C07FD /* SmartReadBooks.m in Sources */,
+				B98162351AEFC019000C07FD /* SmartBookCell.m in Sources */,
+				B98162131AEFBB9A000C07FD /* SmartRootViewController.m in Sources */,
+				B98162101AEFBB9A000C07FD /* AppDelegate.m in Sources */,
+				B981620D1AEFBB9A000C07FD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B981621C1AEFBB9A000C07FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B98162271AEFBB9A000C07FD /* SmartBookCaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B98162221AEFBB9A000C07FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B98162061AEFBB9A000C07FD /* SmartBookCase */;
+			targetProxy = B98162211AEFBB9A000C07FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B98162281AEFBB9A000C07FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		B98162291AEFBB9A000C07FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B981622B1AEFBB9A000C07FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBookCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B981622C1AEFBB9A000C07FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SmartBookCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B981622E1AEFBB9A000C07FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartBookCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBookCase.app/SmartBookCase";
+			};
+			name = Debug;
+		};
+		B981622F1AEFBB9A000C07FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SmartBookCaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBookCase.app/SmartBookCase";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B98162021AEFBB9A000C07FD /* Build configuration list for PBXProject "SmartBookCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B98162281AEFBB9A000C07FD /* Debug */,
+				B98162291AEFBB9A000C07FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B981622A1AEFBB9A000C07FD /* Build configuration list for PBXNativeTarget "SmartBookCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B981622B1AEFBB9A000C07FD /* Debug */,
+				B981622C1AEFBB9A000C07FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B981622D1AEFBB9A000C07FD /* Build configuration list for PBXNativeTarget "SmartBookCaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B981622E1AEFBB9A000C07FD /* Debug */,
+				B981622F1AEFBB9A000C07FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B98161FF1AEFBB9A000C07FD /* Project object */;
+}
