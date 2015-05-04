@@ -24,4 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark 监听按钮点击
+- (void)btnClick
+{
+    NSString *text1 = self.num1.text;
+    NSString *text2 = self.num2.text;
+    
+    int i1 = [text1 intValue];
+    int i2 = [text2 intValue];
+    
+    
+    
+    self.result.text = [NSString stringWithFormat:@"%d",i1+i2];
+}
+
 @end
