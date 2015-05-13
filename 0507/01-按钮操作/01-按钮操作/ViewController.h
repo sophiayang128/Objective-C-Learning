@@ -13,6 +13,10 @@
 
 - (IBAction)run:(id)sender;
 
+- (IBAction)rotate:(id)sender;
+
+- (IBAction)zoom:(id)sender;
+
 
 @end
 
