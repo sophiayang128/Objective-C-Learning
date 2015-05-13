@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>612719D5-1BCC-4AC2-AE81-6772D5D5BF8C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>01-按钮操作</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>
 		<string>https://github.com/sophiayang128/Objective-C-Learning.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>0507/01-按钮操作/01-按钮操作.xcodeproj/project.xcworkspace</string>
+	<string>0507/01-按钮操作/01-按钮操作.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>BA4F1C8DD2BFEBD0BCFD92F7F3DB5357941DCC6A</key>

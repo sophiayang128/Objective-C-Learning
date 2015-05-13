@@ -16,33 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npr-x7-GFO">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npr-x7-GFO">
                                 <rect key="frame" x="66" y="506" width="30" height="30"/>
                                 <state key="normal" backgroundImage="sub_black_up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="sub_blue_up"/>
                                 <connections>
-                                    <action selector="up:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bCi-WP-Kmi"/>
+                                    <action selector="run:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pV1-co-bGt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaM-Iv-66H">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaM-Iv-66H">
                                 <rect key="frame" x="21" y="555" width="30" height="30"/>
                                 <state key="normal" backgroundImage="sub_black_prev">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="sub_blue_prev"/>
+                                <connections>
+                                    <action selector="run:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vHI-Zz-lVe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y40-eo-JUR">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y40-eo-JUR">
                                 <rect key="frame" x="108" y="555" width="30" height="30"/>
                                 <state key="normal" backgroundImage="sub_black_next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="sub_blue_next"/>
+                                <connections>
+                                    <action selector="run:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lKW-SQ-wdH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6B-aw-uvx">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6B-aw-uvx">
                                 <rect key="frame" x="66" y="605" width="30" height="30"/>
                                 <state key="normal" backgroundImage="sub_black_down">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="sub_blue_down"/>
+                                <connections>
+                                    <action selector="run:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gLy-Sc-qDW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgP-mt-b8q">
                                 <rect key="frame" x="147" y="56" width="81" height="52"/>
@@ -54,6 +66,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btn" destination="fgP-mt-b8q" id="h6v-eJ-QBb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -65,6 +80,9 @@
         <image name="sub_black_next" width="36" height="32"/>
         <image name="sub_black_prev" width="36" height="32"/>
         <image name="sub_black_up" width="32" height="36"/>
+        <image name="sub_blue_down" width="32" height="36"/>
+        <image name="sub_blue_next" width="36" height="32"/>
+        <image name="sub_blue_prev" width="36" height="32"/>
         <image name="sub_blue_up" width="32" height="36"/>
     </resources>
 </document>

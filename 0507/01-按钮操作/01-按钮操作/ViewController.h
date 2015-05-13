@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-- (IBAction)up:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
 
+- (IBAction)run:(id)sender;
 
 
 @end
