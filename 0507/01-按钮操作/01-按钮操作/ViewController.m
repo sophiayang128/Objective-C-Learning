@@ -26,6 +26,17 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)btnClickWithBlock:(void (^)())block
+{
+    [UIView beginAnimations:nil context:nil];
+    
+    [UIView setAnimationDuration:0.8];
+    
+    block();
+    
+    [UIView commitAnimations];
+}
+
 
 #pragma mark 控制按钮走动（上下左右）
 //id类不能用点语法
@@ -33,57 +44,55 @@
 {
     //OC语法规定：不允许直接修改某个对象结构体属性的成员
     
-    //0.动画（头部-开始动画）
-    [UIView beginAnimations:nil context:nil];
-    //设置动画执行时间
-    [UIView setAnimationDuration:1.0];
-    
-    //1.先取出frame
-    CGRect tempFrame = _btn.frame;
-    
-    //2.去除tag标记
-    int tag= [sender tag];
-//    CGFloat delta = 20;
-    switch (tag) {
-        case 1: //上
-            tempFrame.origin.y -= kDelta;
-            break;
-            
-        case 2:  //右
-            tempFrame.origin.x += kDelta;
-            break;
-            
-        case 3:  //下
-            tempFrame.origin.y += kDelta;
-            break;
-            
-        case 4:  //左
-            tempFrame.origin.x -= kDelta;
-            break;
-        default:
-            break;
-    }
-   
-    
-    //3.重新赋值按钮的frame
-    _btn.frame = tempFrame;
-    
-    //4.动画（尾部-提交动画-执行动画）
-    [UIView commitAnimations];
+    [self btnClickWithBlock:^{
+        
+        //1.先取出frame
+        CGRect tempFrame = _btn.frame;
+        
+        //2.去除tag标记
+        int tag= [sender tag];
+        //    CGFloat delta = 20;
+        switch (tag) {
+            case 1: //上
+                tempFrame.origin.y -= kDelta;
+                break;
+                
+            case 2:  //右
+                tempFrame.origin.x += kDelta;
+                break;
+                
+            case 3:  //下
+                tempFrame.origin.y += kDelta;
+                break;
+                
+            case 4:  //左
+                tempFrame.origin.x -= kDelta;
+                break;
+            default:
+                break;
+        }
+        
+        
+        //3.重新赋值按钮的frame
+        _btn.frame = tempFrame;
+
+        
+    }];
+
 }
 
 
 #pragma mark 左旋转、右旋转
 - (IBAction)rotate:(id)sender
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.5];
-    
-    CGFloat angel = [sender tag] == 5 ? -M_PI_4 : M_PI_4;
-    _btn.transform = CGAffineTransformRotate(_btn.transform, angel);
-    
-    [UIView commitAnimations];
+    [self btnClickWithBlock:^{
+        CGFloat angel = [sender tag] == 5 ? -M_PI_4 : M_PI_4;
+        _btn.transform = CGAffineTransformRotate(_btn.transform, angel);
 
+    }];
+    
+    
+    
     //弧度制 这里用的是radius
     //角度制
     //向左旋转45度
@@ -108,13 +117,13 @@
 #pragma mark 放大、缩小
 - (IBAction)zoom:(id)sender
 {
-    [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:0.5];
+    [self btnClickWithBlock:^{
+        CGFloat scale = [sender tag] == 7 ? 1.2 : 0.8;
+        _btn.transform = CGAffineTransformScale(_btn.transform, scale, scale);
+
+    }];
     
-    CGFloat scale = [sender tag] == 7 ? 1.2 : 0.8;
-    _btn.transform = CGAffineTransformScale(_btn.transform, scale, scale);
-    
-    [UIView commitAnimations];
+   
 //    int tag = [sender tag];
 //    switch (tag) {
 //        case 7:
@@ -127,6 +136,18 @@
 //        default:
 //            break;
 //    }
+    
+}
+
+#pragma mark 重置按钮
+- (IBAction)reset:(id)sender
+{
+    
+    [self btnClickWithBlock:^{
+        //清空之前所有形变状态（消除旋转、缩放等状态）
+        _btn.transform = CGAffineTransformIdentity;
+    }];
+    
     
 }
 @end

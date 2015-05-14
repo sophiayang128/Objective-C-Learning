@@ -17,6 +17,7 @@
 
 - (IBAction)zoom:(id)sender;
 
+- (IBAction)reset:(id)sender;
 
 @end
 
