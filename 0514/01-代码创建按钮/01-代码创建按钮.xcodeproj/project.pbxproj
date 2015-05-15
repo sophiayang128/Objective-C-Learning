@@ -14,6 +14,8 @@
 		B91778A51B04A282005005B3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B91778A41B04A282005005B3 /* Images.xcassets */; };
 		B91778A81B04A282005005B3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B91778A61B04A282005005B3 /* LaunchScreen.xib */; };
 		B91778B41B04A282005005B3 /* _1_______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B91778B31B04A282005005B3 /* _1_______Tests.m */; };
+		B91778BF1B04A631005005B3 /* btn_01.png in Resources */ = {isa = PBXBuildFile; fileRef = B91778BD1B04A631005005B3 /* btn_01.png */; };
+		B91778C01B04A631005005B3 /* btn_02.png in Resources */ = {isa = PBXBuildFile; fileRef = B91778BE1B04A631005005B3 /* btn_02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		B91778AD1B04A282005005B3 /* 01-代码创建按钮Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "01-代码创建按钮Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91778B21B04A282005005B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B91778B31B04A282005005B3 /* _1_______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1_______Tests.m"; sourceTree = "<group>"; };
+		B91778BD1B04A631005005B3 /* btn_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_01.png; path = "../../../0507/01-按钮操作/01-按钮操作/btn_01.png"; sourceTree = "<group>"; };
+		B91778BE1B04A631005005B3 /* btn_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btn_02.png; path = "../../../0507/01-按钮操作/01-按钮操作/btn_02.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		B91778971B04A282005005B3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B91778BD1B04A631005005B3 /* btn_01.png */,
+				B91778BE1B04A631005005B3 /* btn_02.png */,
 				B91778981B04A282005005B3 /* Info.plist */,
 				B91778991B04A282005005B3 /* main.m */,
 			);
@@ -200,7 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B91778A31B04A282005005B3 /* Main.storyboard in Resources */,
+				B91778BF1B04A631005005B3 /* btn_01.png in Resources */,
 				B91778A81B04A282005005B3 /* LaunchScreen.xib in Resources */,
+				B91778C01B04A631005005B3 /* btn_02.png in Resources */,
 				B91778A51B04A282005005B3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
