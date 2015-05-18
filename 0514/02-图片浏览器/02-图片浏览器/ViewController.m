@@ -38,6 +38,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma marl slider值改变了
 - (IBAction)sliderValueChange:(UISlider *)sender
 {
     
@@ -52,6 +53,27 @@
     //3.设置图片描述
     
     _imageDesc.text = _allDescs[(int)(sender.value+0.5)];
+    
+}
+
+#pragma mark 点击了设置按钮
+- (IBAction)setting
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.6];
+    NSLog(@"%d",self.view.frame.origin.y);
+    
+    CGRect tempSetting = _settingView.frame;
+    if (tempSetting.origin.y == self.view.frame.size.height) {
+        tempSetting.origin.y -= _settingView.frame.size.height;
+    }
+    else{
+        tempSetting.origin.y += _settingView.frame.size.height;
+    }
+    
+    _settingView.frame = tempSetting;
+    
+    [UIView commitAnimations];
     
 }
 @end

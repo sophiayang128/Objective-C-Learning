@@ -11,12 +11,15 @@
 @interface ViewController : UIViewController
 
 - (IBAction)sliderValueChange:(UISlider *)sender;
+- (IBAction)setting;
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UILabel *imageNumber;
 
 @property (weak, nonatomic) IBOutlet UILabel *imageDesc;
+
+@property (weak, nonatomic) IBOutlet UIView *settingView;
 
 @end
 
