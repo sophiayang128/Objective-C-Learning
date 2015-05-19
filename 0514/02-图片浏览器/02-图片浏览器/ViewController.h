@@ -12,6 +12,9 @@
 
 - (IBAction)sliderValueChange:(UISlider *)sender;
 - (IBAction)setting;
+- (IBAction)imageSizeChange:(UISlider *)sender;
+- (IBAction)nightMode:(UISwitch *)sender;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 

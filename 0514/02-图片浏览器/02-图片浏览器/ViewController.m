@@ -61,7 +61,7 @@
 {
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.6];
-    NSLog(@"%d",self.view.frame.origin.y);
+    //NSLog(@"%d",self.view.frame.origin.y);
     
     CGRect tempSetting = _settingView.frame;
     if (tempSetting.origin.y == self.view.frame.size.height) {
@@ -74,6 +74,37 @@
     _settingView.frame = tempSetting;
     
     [UIView commitAnimations];
+    
+}
+
+#pragma mark 图片尺寸改变
+- (IBAction)imageSizeChange:(UISlider *)sender
+{
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.6];
+    
+    _imageView.transform = CGAffineTransformMakeScale(sender.value, sender.value);
+    [UIView commitAnimations];
+    
+}
+
+
+#pragma mark 夜间模式
+- (IBAction)nightMode:(UISwitch *)sender
+{
+    if (sender.on)
+    {
+        self.view.backgroundColor = [UIColor grayColor];
+
+    }
+    else
+    {
+        self.view.backgroundColor = [UIColor whiteColor];
+    }
+    
+    
+    
+    
     
 }
 @end
