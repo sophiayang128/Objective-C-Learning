@@ -14,6 +14,15 @@
 		B906BF201B0CB74500C2683B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B906BF1F1B0CB74500C2683B /* Images.xcassets */; };
 		B906BF231B0CB74500C2683B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B906BF211B0CB74500C2683B /* LaunchScreen.xib */; };
 		B906BF2F1B0CB74500C2683B /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B906BF2E1B0CB74500C2683B /* ____Tests.m */; };
+		B906BF431B0CBB7900C2683B /* 010.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3A1B0CBB7900C2683B /* 010.png */; };
+		B906BF441B0CBB7900C2683B /* 011.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3B1B0CBB7900C2683B /* 011.png */; };
+		B906BF451B0CBB7900C2683B /* 012.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3C1B0CBB7900C2683B /* 012.png */; };
+		B906BF461B0CBB7900C2683B /* 013.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3D1B0CBB7900C2683B /* 013.png */; };
+		B906BF471B0CBB7900C2683B /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3E1B0CBB7900C2683B /* 014.png */; };
+		B906BF481B0CBB7900C2683B /* 015.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF3F1B0CBB7900C2683B /* 015.png */; };
+		B906BF491B0CBB7900C2683B /* 016.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF401B0CBB7900C2683B /* 016.png */; };
+		B906BF4A1B0CBB7900C2683B /* 017.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF411B0CBB7900C2683B /* 017.png */; };
+		B906BF4B1B0CBB7900C2683B /* 018.png in Resources */ = {isa = PBXBuildFile; fileRef = B906BF421B0CBB7900C2683B /* 018.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,15 @@
 		B906BF281B0CB74500C2683B /* 表情排列Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "表情排列Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B906BF2D1B0CB74500C2683B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B906BF2E1B0CB74500C2683B /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
+		B906BF3A1B0CBB7900C2683B /* 010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 010.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/010.png"; sourceTree = "<group>"; };
+		B906BF3B1B0CBB7900C2683B /* 011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 011.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/011.png"; sourceTree = "<group>"; };
+		B906BF3C1B0CBB7900C2683B /* 012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 012.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/012.png"; sourceTree = "<group>"; };
+		B906BF3D1B0CBB7900C2683B /* 013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 013.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/013.png"; sourceTree = "<group>"; };
+		B906BF3E1B0CBB7900C2683B /* 014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 014.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/014.png"; sourceTree = "<group>"; };
+		B906BF3F1B0CBB7900C2683B /* 015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 015.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/015.png"; sourceTree = "<group>"; };
+		B906BF401B0CBB7900C2683B /* 016.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 016.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/016.png"; sourceTree = "<group>"; };
+		B906BF411B0CBB7900C2683B /* 017.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 017.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/017.png"; sourceTree = "<group>"; };
+		B906BF421B0CBB7900C2683B /* 018.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 018.png; path = "../../../../../百度云同步盘/ios开发进阶教程(8)/02-基础控件/12月25日更新-基础控件(4-5)/1124/代码/01-表情排列/01-表情排列/018.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,7 @@
 		B906BF121B0CB74500C2683B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B906BF391B0CBB6B00C2683B /* images */,
 				B906BF131B0CB74500C2683B /* Info.plist */,
 				B906BF141B0CB74500C2683B /* main.m */,
 			);
@@ -117,6 +136,22 @@
 				B906BF2D1B0CB74500C2683B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B906BF391B0CBB6B00C2683B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B906BF3A1B0CBB7900C2683B /* 010.png */,
+				B906BF3B1B0CBB7900C2683B /* 011.png */,
+				B906BF3C1B0CBB7900C2683B /* 012.png */,
+				B906BF3D1B0CBB7900C2683B /* 013.png */,
+				B906BF3E1B0CBB7900C2683B /* 014.png */,
+				B906BF3F1B0CBB7900C2683B /* 015.png */,
+				B906BF401B0CBB7900C2683B /* 016.png */,
+				B906BF411B0CBB7900C2683B /* 017.png */,
+				B906BF421B0CBB7900C2683B /* 018.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +234,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B906BF481B0CBB7900C2683B /* 015.png in Resources */,
 				B906BF1E1B0CB74500C2683B /* Main.storyboard in Resources */,
 				B906BF231B0CB74500C2683B /* LaunchScreen.xib in Resources */,
+				B906BF4B1B0CBB7900C2683B /* 018.png in Resources */,
+				B906BF441B0CBB7900C2683B /* 011.png in Resources */,
+				B906BF461B0CBB7900C2683B /* 013.png in Resources */,
+				B906BF451B0CBB7900C2683B /* 012.png in Resources */,
 				B906BF201B0CB74500C2683B /* Images.xcassets in Resources */,
+				B906BF491B0CBB7900C2683B /* 016.png in Resources */,
+				B906BF4A1B0CBB7900C2683B /* 017.png in Resources */,
+				B906BF431B0CBB7900C2683B /* 010.png in Resources */,
+				B906BF471B0CBB7900C2683B /* 014.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

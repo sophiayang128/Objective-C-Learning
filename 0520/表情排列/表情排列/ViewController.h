@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)indexChange:(UISegmentedControl *)sender;
 
 @end
 
